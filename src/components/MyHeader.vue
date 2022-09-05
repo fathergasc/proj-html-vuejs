@@ -32,7 +32,7 @@ export default {
      link: '#'
     },
     {
-     name: 'Deparments',
+     name: 'Departments',
      link: '#'
     },
     {
