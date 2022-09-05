@@ -10,7 +10,7 @@
 export default {
  name: 'WelcomeCard',
  props: {
-    welcomeCards: Array,
+    welcomeCards: Object,
  },
  methods: {
     getImgPath(path) {
@@ -21,13 +21,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../styles/variables.scss';
 
 .welcome-card{
     text-align: center;
     font-weight: 300;
 
     img {
-        width: 25%;
+        width: $icon_width;
     }
 
     h5 {

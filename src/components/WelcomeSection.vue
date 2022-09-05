@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section id="welcome" class="container">
     <div class="welcome-top">
         <h2>Welcome to Avada Health</h2>
         <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi similique eaque esse quod reiciendis perferendis aut nisi repellat.</p>
@@ -8,7 +8,7 @@
         <WelcomeCard v-for="(card, index) in welcomeCards" :key="index" :welcomeCards="card" />
     </div>
     
-  </div>
+  </section>
 </template>
 
 <script>
@@ -60,6 +60,7 @@ export default {
 
     h2 {
         font-weight: 300;
+        font-size: 1.5rem;
     }
 }
 
