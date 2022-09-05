@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome-card">
+  <div class="small-card">
     <img :src="getImgPath(welcomeCards.image)" alt="">
     <h5 class="py-3">{{welcomeCards.title}}</h5>
     <p class="text-black-50">{{welcomeCards.text}}</p>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
- name: 'WelcomeCard',
+ name: 'SmallCard',
  props: {
     welcomeCards: Object,
  },
@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 @import '../styles/variables.scss';
 
-.welcome-card{
+.small-card{
     text-align: center;
     font-weight: 300;
 

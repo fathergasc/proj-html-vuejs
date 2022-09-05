@@ -5,14 +5,14 @@
         <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi similique eaque esse quod reiciendis perferendis aut nisi repellat.</p>
     </div>
     <div class="welcome-cards pt-3">
-        <WelcomeCard v-for="(card, index) in welcomeCards" :key="index" :welcomeCards="card" />
+        <SmallCard v-for="(card, index) in welcomeCards" :key="index" :welcomeCards="card" />
     </div>
     
   </section>
 </template>
 
 <script>
-import WelcomeCard from './WelcomeCard.vue'
+import SmallCard from './SmallCard.vue'
 
 
 export default {
@@ -44,7 +44,7 @@ export default {
         } 
     },
     components: {
-        WelcomeCard,
+        SmallCard,
     },
  }
 
