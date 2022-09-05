@@ -1,8 +1,8 @@
 <template>
   <div class="small-card">
-    <img :src="getImgPath(welcomeCards.image)" alt="">
-    <h5 class="py-3">{{welcomeCards.title}}</h5>
-    <p class="text-black-50">{{welcomeCards.text}}</p>
+    <img :src="getImgPath(card.image)" alt="">
+    <h5 class="py-3">{{card.title}}</h5>
+    <p class="text-black-50">{{card.text}}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
  name: 'SmallCard',
  props: {
-    welcomeCards: Object,
+    card: Object
  },
  methods: {
     getImgPath(path) {

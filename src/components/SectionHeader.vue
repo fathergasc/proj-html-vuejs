@@ -1,11 +1,10 @@
 <template>
-<div class="container">
     <div class="section-header">
-        <img :src="getImgPath(header.icon)" alt="">
-        <h2 class="py-3">{{header.title}}</h2>
+        <img class="pt-1" :src="getImgPath(header.icon)" alt="">
+        <h2 class="py-5">{{header.title}}</h2>
         <p>{{header.text}}</p>
     </div>
-</div>
+
   
 </template>
 
@@ -36,11 +35,27 @@ export default {
 
     img {
         width: $icon_width;
+
+        
     }
 
     h2 {
         text-transform: uppercase;
         font-size: 1.5rem;
+        position: relative;
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 1px;
+            background-color: lighten($grey_dark, 30%);
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translate(-50%, 0);
+
+        }
     }
 }
 

@@ -5,7 +5,7 @@
         <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi similique eaque esse quod reiciendis perferendis aut nisi repellat.</p>
     </div>
     <div class="welcome-cards pt-3">
-        <SmallCard v-for="(card, index) in welcomeCards" :key="index" :welcomeCards="card" />
+        <SmallCard v-for="(card, index) in welcomeCards" :key="index" :card="card" />
     </div>
     
   </section>
