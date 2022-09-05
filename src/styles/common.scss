@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my_button {
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    
+    
+} 
+
+.my_button.btn_blue {
+        background-color: $blue_light;
+        border: none;
+        color: white;
+
+        &:hover {
+            background-color: darken($blue_light, 10%);
+        }
+    }
+
+// bootstrap ovveride
+ul {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1000px;
+}
