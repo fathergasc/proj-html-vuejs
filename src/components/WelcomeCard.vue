@@ -2,7 +2,7 @@
   <div class="welcome-card">
     <img :src="getImgPath(welcomeCards.image)" alt="">
     <h5 class="py-3">{{welcomeCards.title}}</h5>
-    <p>{{welcomeCards.text}}</p>
+    <p class="text-black-50">{{welcomeCards.text}}</p>
   </div>
 </template>
 

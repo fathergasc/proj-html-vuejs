@@ -1,10 +1,10 @@
 <template>
   <header>
     <div id="nav-bar">
-        <img src="../assets/images/medical_logo_1x_light.png" alt="">
+        <a href="#"><img src="../assets/images/medical_logo_1x_light.png" alt=""></a>
         <div id="nav-bar-right">
             <ul>
-                <li v-for="(navItem, index) in navBarLinks" :key="index"><a :href="navItem.link" class="ms-4">{{navItem.name}}</a></li>
+                <li v-for="(navItem, index) in navBarLinks" :key="index"><a :href="navItem.link" class="ms-1 p-3">{{navItem.name}}</a></li>
             </ul>
             <button class="ms-4 my_button btn_blue">Make appointment</button>
         </div>
@@ -12,7 +12,7 @@
     <div id="header-card" class="container d-flex align-items-start flex-column justify-content-center">
         <h1>Caring <span>For Life</span></h1>
         <p class="py-2">Kind words can be short and easy to spaek, but thei echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
-        <button class="my_button btn_blue">learn more</button>
+        <a href="#welcome" class="my_button btn_blue">learn more</a>
     </div>
   </header>
 </template>
