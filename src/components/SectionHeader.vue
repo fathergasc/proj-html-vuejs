@@ -35,8 +35,6 @@ export default {
 
     img {
         width: $icon_width;
-
-        
     }
 
     h2 {
@@ -57,6 +55,10 @@ export default {
             transform: translate(-50%, 0);
 
         }
+    }
+    
+    p {
+        padding: 1.5rem;
     }
 }
 

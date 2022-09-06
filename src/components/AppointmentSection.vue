@@ -58,8 +58,8 @@ export default {
 form {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    
+    justify-content: space-between;
+    width: 60%;
     
     input, textarea {
         font-weight: 600;
