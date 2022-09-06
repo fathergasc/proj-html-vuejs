@@ -7,7 +7,7 @@
             <span class="text-uppercase">learn more about us</span>
             <div class="d-flex justify-content-start py-4">
                 <div class="socials" v-for="(contact, index) in socials" :key="index" :style="contact.color">
-                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a></a>
+                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a>
                 </div>
             </div>
         </div>
