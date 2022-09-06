@@ -1,14 +1,17 @@
 <template>
     <section id="appointment">
-        <SectionHeader :header="appointmentHeaderData"/>
-        <form action="URL" method="POST">
-            <input class="form_small" type="text" placeholder="Name*" required>
-            <input class="form_small" type="email" placeholder="Email*" required>
-            <input class="form_small" type="tel" placeholder="Phone Number*" required>
-            <input class="form_small" type="date" required>
-            <textarea class="form_big" name="text" cols="8" rows="6" placeholder="How can we help?*"></textarea>
-            <span class="my_button btn_blue">make an appointment</span>
-        </form>
+        <div class="container">
+            <SectionHeader :header="appointmentHeaderData"/>
+            <form>
+                <input class="form_small" type="text" placeholder="Name*" required>
+                <input class="form_small" type="email" placeholder="Email*" required>
+                <input class="form_small" type="tel" placeholder="Phone Number*" required>
+                <input class="form_small" type="text" onfocus="type='date'" onfocusout="type='text'" placeholder="Appointment Date" required>
+                <textarea class="form_big" name="text" cols="8" rows="6" placeholder="How can we help?*"></textarea>
+                <input type="submit" class="my_button btn_blue" value="make an appointment"/>
+            </form>
+        </div>
+        
     </section>
   
 </template>
@@ -22,6 +25,7 @@ export default {
     },
     data() {
         return {
+            datePlaceholder: '&#128198; Appointment Date',
             appointmentHeaderData: {
             title: 'Make an Appointment',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
@@ -54,6 +58,13 @@ export default {
 form {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    
+    
+    input, textarea {
+        font-weight: 600;
+        color: white;
+    }
 
     .form_small {
         width: calc(50% - 2rem);
@@ -61,7 +72,7 @@ form {
         padding: 0.5rem;
         background-color: transparent;
         border: 1px solid $grey_light;
-        color: grey;
+        color: white;
     }
 
     .form_big {
@@ -81,8 +92,8 @@ form {
     }
 }
 
-input[type="date"] {
-    color: grey;
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
 
 </style>
