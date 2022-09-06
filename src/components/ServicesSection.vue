@@ -76,6 +76,10 @@ export default {
     .small-card {
         width: calc(100% / 3 - 2rem);
         margin: 1rem;
+
+        &:hover > h5 {
+            color: $blue_light;
+        }
     }
 }
 

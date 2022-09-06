@@ -6,7 +6,7 @@
             <ul>
                 <li v-for="(navItem, index) in navBarLinks" :key="index"><a :href="navItem.link" class="ms-1 p-3">{{navItem.name}}</a></li>
             </ul>
-            <button class="ms-4 my_button btn_blue">Make appointment</button>
+            <a href="#appointment" class="ms-4 my_button btn_blue">Make appointment</a>
         </div>
     </div>
     <div id="header-card" class="container d-flex align-items-start flex-column justify-content-center">
@@ -29,11 +29,11 @@ export default {
     },
     {
      name: 'About',
-     link: '#'
+     link: '#welcome'
     },
     {
      name: 'Departments',
-     link: '#'
+     link: '#services'
     },
     {
      name: 'Articles',
@@ -52,7 +52,7 @@ export default {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../assets/images/header-image-homepage.jpg);
     background-size: cover;
     background-position: top;

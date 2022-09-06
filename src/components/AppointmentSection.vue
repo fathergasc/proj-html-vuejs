@@ -48,7 +48,7 @@ export default {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 6rem 0;
+    padding: 4rem 0;
 
     h2 {
         text-transform: capitalize;
@@ -62,8 +62,9 @@ form {
     width: 60%;
     
     input, textarea {
-        font-weight: 600;
+        font-weight: 500;
         color: white;
+        font-size: 0.8rem;
     }
 
     .form_small {

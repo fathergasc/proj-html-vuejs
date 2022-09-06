@@ -44,11 +44,27 @@ a {
     }
 }
 
+.my_button.btn_white {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 1rem 2rem;
+
+    a {
+        color: black;
+
+        &:hover {
+            color: $blue_light;
+        }
+    }
+}
+
 // bootstrap override
 ul {
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .container {
-    padding: 2rem;
+    padding: 4rem 2rem;
 }

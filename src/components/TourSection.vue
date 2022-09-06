@@ -36,7 +36,7 @@ export default {
 @import '../styles/variables.scss';
 
 .tour-top {
-    padding: 7rem 0;
+    padding: 4rem 0;
     color: white;
     background-image: url(../assets/images/paralax-bg-tour-facilities.jpg);
     background-size: cover;
