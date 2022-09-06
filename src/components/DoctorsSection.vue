@@ -36,17 +36,17 @@ export default {
                     socials: [
                         {
                             icon: '<i class="fa-brands fa-facebook-f"></i>',
-                            link: '#',
+                            link: 'https://www.facebook.com/',
                             color: 'background-color: #3c5998'
                         },
                         {
                             icon: '<i class="fa-brands fa-twitter"></i>',
-                            link: '#',
+                            link: 'https://twitter.com/',
                             color: 'background-color: #54acee'
                         },
                         {
                             icon: '<i class="fa-brands fa-instagram"></i>',
-                            link: '#',
+                            link: 'https://www.instagram.com/',
                             color: 'background-color: #3f729b'
                         },
                     ],
@@ -59,17 +59,17 @@ export default {
                     socials: [
                         {
                             icon: '<i class="fa-brands fa-facebook-f"></i>',
-                            link: '#',
+                            link: 'https://www.facebook.com/',
                             color: 'background-color: #3c5998'
                         },
                         {
                             icon: '<i class="fa-brands fa-twitter"></i>',
-                            link: '#',
+                            link: 'https://twitter.com/',
                             color: 'background-color: #54acee'
                         },
                         {
                             icon: '<i class="fa-brands fa-instagram"></i>',
-                            link: '#',
+                            link: 'https://www.instagram.com/',
                             color: 'background-color: #3f729b'
                         },
                     ],
@@ -82,17 +82,17 @@ export default {
                     socials: [
                         {
                             icon: '<i class="fa-brands fa-facebook-f"></i>',
-                            link: '#',
+                            link: 'https://www.facebook.com/',
                             color: 'background-color: #3c5998'
                         },
                         {
                             icon: '<i class="fa-brands fa-twitter"></i>',
-                            link: '#',
+                            link: 'https://twitter.com/',
                             color: 'background-color: #54acee'
                         },
                         {
                             icon: '<i class="fa-brands fa-instagram"></i>',
-                            link: '#',
+                            link: 'https://www.instagram.com/',
                             color: 'background-color: #3f729b'
                         },
                     ],

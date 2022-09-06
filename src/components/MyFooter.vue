@@ -7,7 +7,7 @@
             <span class="text-uppercase">learn more about us</span>
             <div class="d-flex justify-content-start py-4">
                 <div class="socials" v-for="(contact, index) in socials" :key="index" :style="contact.color">
-                <a :href="contact.link" v-html="contact.icon"></a>
+                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a></a>
                 </div>
             </div>
         </div>
@@ -39,22 +39,22 @@ export default {
             socials: [
                         {
                             icon: '<i class="fa-brands fa-facebook-f"></i>',
-                            link: '#',
+                            link: 'https://www.facebook.com/',
                             color: 'background-color: #3c5998'
                         },
                         {
                             icon: '<i class="fa-brands fa-twitter"></i>',
-                            link: '#',
+                            link: 'https://twitter.com/',
                             color: 'background-color: #54acee'
                         },
                         {
                             icon: '<i class="fa-brands fa-youtube"></i>',
-                            link: '#',
+                            link: 'https://www.youtube.com/',
                             color: 'background-color: #cd201f'
                         },
                         {
                             icon: '<i class="fa-brands fa-instagram"></i>',
-                            link: '#',
+                            link: 'https://www.instagram.com/',
                             color: 'background-color: #3f729b'
                         },
                     ],

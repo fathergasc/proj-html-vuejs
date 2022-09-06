@@ -7,7 +7,7 @@
         <p class="text-black-50 py-3">{{doctor.text}}</p>
         <div class="doctor-contacts">
             <div v-for="(contact, index) in doctor.socials" :key="index" :style="contact.color">
-                <a :href="contact.link" v-html="contact.icon"></a>
+                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a>
             </div>
         </div>
     </div>
