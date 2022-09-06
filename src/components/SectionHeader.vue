@@ -1,6 +1,6 @@
 <template>
     <div class="section-header">
-        <img class="pt-1" :src="getImgPath(header.icon)" alt="">
+        <img v-if="header.hasOwnProperty('icon')" class="pt-1" :src="getImgPath(header.icon)" alt="">
         <h2 class="py-5">{{header.title}}</h2>
         <p>{{header.text}}</p>
     </div>
@@ -41,8 +41,9 @@ export default {
 
     h2 {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         position: relative;
+        font-weight: 300;
         
         &::after {
             content: '';

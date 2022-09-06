@@ -26,7 +26,7 @@ export default {
 .small-card{
     text-align: center;
     font-weight: 300;
-    }
+    
 
     img {
         width: $icon_width;
@@ -41,6 +41,7 @@ export default {
     p {
         font-size: 0.8rem;
     }
+}
 
 
 </style>
