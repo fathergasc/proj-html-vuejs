@@ -27,9 +27,20 @@ a {
         color: white;
 
         &:hover {
-            background-color: darken($blue_light, 10%);
+            background-color: $blue_dark;
         }
+}
+
+.my_button.btn_transparent {
+    background-color: none;
+    border: 1px solid white;
+
+    &:hover {
+        background-color: white;
+        color: $blue_light;
+        border: 1px solid $grey_dark;
     }
+}
 
 // bootstrap override
 ul {
@@ -37,6 +48,5 @@ ul {
 }
 
 .container {
-    max-width: 1000px;
     padding: 2rem;
 }

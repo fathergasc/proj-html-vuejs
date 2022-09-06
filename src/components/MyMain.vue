@@ -4,6 +4,7 @@
     <DoctorsSection />
     <ServicesSection />
     <TourSection />
+    <LearnMoreSection />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import WelcomeSection from './WelcomeSection.vue'
 import DoctorsSection from './DoctorsSection.vue'
 import ServicesSection from './ServicesSection.vue'
 import TourSection from './TourSection.vue'
+import LearnMoreSection from './LearnMoreSection.vue'
 
 export default {
  name: 'MyMain',
@@ -20,6 +22,7 @@ export default {
     DoctorsSection,
     ServicesSection,
     TourSection,
+    LearnMoreSection,
  },
  data() {
     return {

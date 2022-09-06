@@ -52,7 +52,7 @@ export default {
 
 header {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-image: url(../assets/images/header-image-homepage.jpg);
     background-size: cover;
     background-position: top;
