@@ -6,6 +6,7 @@
     <TourSection />
     <LearnMoreSection />
     <AppointmentSection />
+    <ClientsSection />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import ServicesSection from './ServicesSection.vue'
 import TourSection from './TourSection.vue'
 import LearnMoreSection from './LearnMoreSection.vue'
 import AppointmentSection from './AppointmentSection.vue'
+import ClientsSection from './ClientsSection.vue'
 
 export default {
  name: 'MyMain',
@@ -26,6 +28,7 @@ export default {
     TourSection,
     LearnMoreSection,
     AppointmentSection,
+    ClientsSection,
  },
  data() {
     return {
