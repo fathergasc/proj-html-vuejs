@@ -6,9 +6,8 @@
         <span>{{doctor.position}}</span>
         <p class="text-black-50 py-3">{{doctor.text}}</p>
         <div class="doctor-contacts">
-            <div v-for="(contact, index) in doctor.socials" :key="index" :style="contact.color">
-                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a>
-            </div>
+            <!-- prints social link with brand color ad bg-color of the element -->
+            <SocialLink :contact="contact" v-for="(contact, index) in doctor.socials" :key="index"/>
         </div>
     </div>
     
@@ -16,10 +15,15 @@
 </template>
 
 <script>
+import SocialLink from './SocialLink.vue'
+
 export default {
     name: 'DoctorCard',
     props: {
         doctor: Object
+    },
+    components: {
+        SocialLink,
     },
     methods: {
         getImgPath(path) {
@@ -55,23 +59,7 @@ export default {
 .doctor-contacts {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 30px;
-        margin-right: 1rem;
-        border-radius: 5px;
-    }
-    
-    i {
-        color: white;
-    }
-
-    
+    align-items: center; 
 }
     
 </style>

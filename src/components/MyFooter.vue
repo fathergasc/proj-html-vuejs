@@ -6,9 +6,8 @@
             <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus dignissimos aliquid ducimus. Nam nostrum illum, ullam exercitationem error dolorem.</p>
             <span class="text-uppercase">learn more about us</span>
             <div class="d-flex justify-content-start py-4">
-                <div class="socials" v-for="(contact, index) in socials" :key="index" :style="contact.color">
-                <a :href="contact.link" v-html="contact.icon" target="_blank" rel="noopener noreferrer"></a>
-                </div>
+                <!-- prints social link with brand color ad bg-color of the element -->
+                <SocialLink :contact="contact" v-for="(contact, index) in socials" :key="index"/>
             </div>
         </div>
         <div class="footer-top-center">
@@ -28,11 +27,13 @@
 
 <script>
 import FooterList from './FooterList.vue'
+import SocialLink from './SocialLink.vue'
 
 export default {
     name: 'MyFooter',
     components: {
-        FooterList
+        FooterList,
+        SocialLink
     },
     data() {
         return {
@@ -142,6 +143,10 @@ export default {
 
 .footer-top-right {
 
+    li:hover > a {
+        color: $blue_light
+    }
+
     i {
         width: 30px;
         height: 30px;
@@ -150,20 +155,6 @@ export default {
         border-radius: 50%;
         color: white;
         background-color: $blue_light;
-    }
-}
-
-.socials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 30px;
-        margin-right: 1rem;
-        border-radius: 5px;
-
-        i {
-        color: white;
     }
 }
 

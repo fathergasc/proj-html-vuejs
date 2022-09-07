@@ -74,6 +74,10 @@ header {
     top: 0;
     left: 0; 
     width: 100%;
+
+    li:hover > a {
+        color: $blue_light
+    }
 }
 
 #nav-bar-right {

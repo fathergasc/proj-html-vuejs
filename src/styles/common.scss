@@ -50,12 +50,16 @@ a {
     color: black;
     padding: 1rem 2rem;
 
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover > a {
+        color: $blue_light;
+    }
+
     a {
         color: black;
-
-        &:hover {
-            color: $blue_light;
-        }
     }
 }
 
