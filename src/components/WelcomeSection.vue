@@ -1,54 +1,51 @@
 <template>
-  <section id="welcome" class="container">
-    <div class="welcome-top">
-        <h2>Welcome to Avada Health</h2>
-        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi similique eaque esse quod reiciendis perferendis aut nisi repellat.</p>
-    </div>
-    <div class="welcome-cards pt-3">
-        <SmallCard v-for="(card, index) in welcomeCards" :key="index" :card="card" class="px-2" />
-    </div>
-    
-  </section>
+    <section id="welcome" class="container">
+        <div class="welcome-top">
+            <h2 class="dark-text">Welcome to Avada Health</h2>
+            <p class="py-3 grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi quasi similique eaque esse quod reiciendis perferendis aut nisi repellat.</p>
+        </div>
+        <div class="welcome-cards pt-3">
+            <SmallCard v-for="(card, index) in welcomeCards" :key="index" :card="card" class="px-2" />
+        </div>
+    </section>
 </template>
 
 <script>
-import SmallCard from './SmallCard.vue'
-
+import SmallCard from "./SmallCard.vue";
 
 export default {
-    name: 'WelcomeSection',
+    name: "WelcomeSection",
     data() {
         return {
             //data for #welcome cards v-for
             welcomeCards: [
-            {
-                image: 'icon-1.png',
-                title: 'same day appointments',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-            },
-            {
-                image: 'icon-2.png',
-                title: 'world class facilities',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-            },
-            {
-                image: 'icon-3.png',
-                title: 'expert doctors',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-            },
-            {
-                image: 'icon-4.png',
-                title: 'complementary therapies',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-            },
-            ]
-        } 
+                {
+                    image: "icon-1.png",
+                    title: "same day appointments",
+                    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+                },
+                {
+                    image: "icon-2.png",
+                    title: "world class facilities",
+                    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+                },
+                {
+                    image: "icon-3.png",
+                    title: "expert doctors",
+                    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+                },
+                {
+                    image: "icon-4.png",
+                    title: "complementary therapies",
+                    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+                },
+            ],
+        };
     },
     components: {
         SmallCard,
     },
- }
-
+};
 </script>
 
 <style lang="scss">
@@ -61,7 +58,7 @@ export default {
 
     h2 {
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -75,5 +72,4 @@ export default {
     justify-content: center;
     align-items: flex-start;
 }
-
 </style>

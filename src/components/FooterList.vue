@@ -1,25 +1,23 @@
 <template>
-  <div class="footer-list">
-    <h5 class="text-uppercase">{{contacts[0].title}}</h5>
-    <ul>
-        <li v-for="(contact, index) in contacts[0].items" :key="index" ><a :href="contact.link" v-html="contact.icon + contact.text"></a>
-        </li>
-    </ul>
-  </div>
+    <div class="footer-list">
+        <h5 class="text-uppercase dark-text">{{ contacts[0].title }}</h5>
+        <ul>
+            <li v-for="(contact, index) in contacts[0].items" :key="index"><a class="dark-text" :href="contact.link" v-html="contact.icon + contact.text"></a></li>
+        </ul>
+    </div>
 </template>
 
 <script>
 export default {
- name: 'FooterList',
- props: {
-    contacts: Array
- }
-}
+    name: "FooterList",
+    props: {
+        contacts: Array,
+    },
+};
 </script>
 
 <style lang="scss">
-
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
 .footer-list {
     text-align: left;
@@ -29,7 +27,7 @@ export default {
         margin-bottom: 2rem;
 
         &::after {
-            content: '';
+            content: "";
             display: block;
             width: 50px;
             height: 2px;
@@ -45,11 +43,6 @@ export default {
 
     li {
         margin: 1rem 0;
-        
-        a {
-            color: grey;
-        }
     }
 }
-
 </style>

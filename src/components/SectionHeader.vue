@@ -1,29 +1,27 @@
 <template>
     <div class="section-header">
-        <img v-if="header.hasOwnProperty('icon')" class="pt-1" :src="getImgPath(header.icon)" alt="">
-        <h2 class="py-5">{{header.title}}</h2>
-        <p>{{header.text}}</p>
+        <img v-if="header.hasOwnProperty('icon')" class="pt-1" :src="getImgPath(header.icon)" alt="" />
+        <h2 class="py-3 dark-text">{{ header.title }}</h2>
+        <p class="dark-text">{{ header.text }}</p>
     </div>
-
-  
 </template>
 
 <script>
 export default {
- name: 'SectionHeader',
- props: {
-    header: Object
- },
- methods: {
-    getImgPath(path) {
-        return require('../assets/images/' + path)
-    } 
- },
-}
+    name: "SectionHeader",
+    props: {
+        header: Object,
+    },
+    methods: {
+        getImgPath(path) {
+            return require("../assets/images/" + path);
+        },
+    },
+};
 </script>
 
 <style lang="scss">
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
 .section-header {
     display: flex;
@@ -42,24 +40,22 @@ export default {
         font-size: 1.8rem;
         position: relative;
         font-weight: 300;
-        
+
         &::after {
-            content: '';
+            content: "";
             display: block;
             width: 200px;
             height: 1px;
             background-color: lighten($grey_dark, 30%);
             position: absolute;
             left: 50%;
-            bottom: 20%;
+            bottom: 0;
             transform: translate(-50%, 0);
-
         }
     }
-    
+
     p {
         padding: 1.5rem;
     }
 }
-
 </style>

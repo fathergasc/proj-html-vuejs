@@ -1,32 +1,31 @@
 <template>
-  <div class="small-card">
-    <img :src="getImgPath(card.image)" alt="">
-    <h5 class="py-3">{{card.title}}</h5>
-    <p class="text-black-50">{{card.text}}</p>
-  </div>
+    <div class="small-card">
+        <img :src="getImgPath(card.image)" alt="" />
+        <h5 class="py-3 dark-text">{{ card.title }}</h5>
+        <p class="grey-text">{{ card.text }}</p>
+    </div>
 </template>
 
 <script>
 export default {
- name: 'SmallCard',
- props: {
-    card: Object
- },
- methods: {
-    getImgPath(path) {
-        return require('../assets/images/' + path)
-    }
- }
-}
+    name: "SmallCard",
+    props: {
+        card: Object,
+    },
+    methods: {
+        getImgPath(path) {
+            return require("../assets/images/" + path);
+        },
+    },
+};
 </script>
 
 <style lang="scss">
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
-.small-card{
+.small-card {
     text-align: center;
     font-weight: 300;
-    
 
     img {
         width: $icon_width;
@@ -42,6 +41,4 @@ export default {
         font-size: 0.8rem;
     }
 }
-
-
 </style>

@@ -17,19 +17,17 @@ a {
 .my_button {
     text-transform: uppercase;
     padding: 0.4rem 1rem;
-    
-    
-} 
+}
 
 .my_button.btn_blue {
-        background-color: $blue_light;
-        border: none;
-        color: white;
+    background-color: $blue_light;
+    border: none;
+    color: white;
 
-        &:hover {
-            background-color: $blue_dark;
-            cursor: pointer;
-        }
+    &:hover {
+        background-color: $blue_dark;
+        cursor: pointer;
+    }
 }
 
 .my_button.btn_transparent {
@@ -47,7 +45,6 @@ a {
 .my_button.btn_white {
     background-color: white;
     border: 1px solid black;
-    color: black;
     padding: 1rem 2rem;
 
     &:hover {
@@ -59,7 +56,7 @@ a {
     }
 
     a {
-        color: black;
+        color: $text_dark_blue;
     }
 }
 

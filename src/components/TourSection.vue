@@ -1,26 +1,31 @@
 <template>
-  <section id="tour">
-    <div class="tour-top">
-        <div class="container">
-            <SectionHeader :header="tourHeaderData"/>
-            <span class="play-button mt-5" @click="showVideo"><i class="fa-solid fa-play"></i></span>
+    <section id="tour">
+        <div class="tour-top">
+            <div class="container">
+                <SectionHeader :header="tourHeaderData" />
+                <span class="play-button mt-5" @click="showVideo"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <!-- video wrapper rendered on show == true and hidden on click on .video-wrapper -->
+            <div class="video-wrapper" v-if="show == true" @click="closeVideo">
+                <iframe
+                    width="960"
+                    height="540"
+                    src="https://www.youtube.com/embed/4LrQ8V6offk?autoplay=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
         </div>
-        <!-- video wrapper rendered on show == true and hidden on click on .video-wrapper -->
-        <div class="video-wrapper" v-if="show == true" @click="closeVideo">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/4LrQ8V6offk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-    </div>
-    
-    
-  </section>
+    </section>
 </template>
 
 <script>
-import SectionHeader from './SectionHeader.vue'
+import SectionHeader from "./SectionHeader.vue";
 
 export default {
-    name: 'TourSection',
+    name: "TourSection",
     components: {
         SectionHeader,
     },
@@ -29,11 +34,11 @@ export default {
             show: false,
             //data for section header
             tourHeaderData: {
-                icon: 'icon-7.png',
-                title: 'tour our facilities',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
+                icon: "icon-7.png",
+                title: "tour our facilities",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             },
-        }
+        };
     },
     methods: {
         //functions to show overlayed video
@@ -42,22 +47,35 @@ export default {
         },
         closeVideo() {
             this.show = false;
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
 
-@import '../styles/variables.scss';
+.tour-top {
+    .container {
+        .section-header {
+            h2,
+            p {
+                color: white;
+            }
+        }
+    }
+}
 
 .tour-top {
     padding: 4rem 0;
-    color: white;
     background-image: url(../assets/images/paralax-bg-tour-facilities.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+
+    .container {
+        color: white;
+    }
 
     span {
         color: white;
@@ -67,7 +85,6 @@ export default {
             transform: scale(1.1);
             cursor: pointer;
         }
-
     }
 }
 
@@ -87,8 +104,8 @@ export default {
 
 .video-wrapper {
     position: fixed;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
