@@ -26,18 +26,21 @@ export default {
         width: 30px;
         margin-right: 1rem;
         border-radius: 5px;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            i {
+                color: white;
+            }
+    
     }
 
-    a {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
-    i {
-        color: white;
-    }
 
 </style>
