@@ -30,11 +30,6 @@ export default {
     AppointmentSection,
     ClientsSection,
  },
- data() {
-    return {
-        
-    }
- },
 }
 </script>
 

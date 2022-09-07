@@ -22,11 +22,13 @@ export default {
     },
     data() {
         return {
+            //data for section header
             servicesHeaderData: {
                 icon: 'icon-6.png',
                 title: 'our health services',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
             },
+            //data for services cards v-for
             servicesCards: [
             {
                 image: 'icon-14.png',

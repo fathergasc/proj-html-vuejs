@@ -11,6 +11,7 @@ export default {
  name: 'ClientsSection',
  data() {
     return {
+        //data for clients logo v-for
         clients: [
             {
                 image: 'client-logos-1.png',

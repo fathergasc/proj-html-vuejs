@@ -14,6 +14,7 @@ export default {
     },
     data() {
         return {
+            //data for learn-more cards v-for with color key to change bg-color
             learnMoreCards: [
                 {
                     title: 'Emergency Care',

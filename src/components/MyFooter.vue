@@ -36,6 +36,7 @@ export default {
     },
     data() {
         return {
+            //data for socials links v-for in .footer-top-left
             socials: [
                         {
                             icon: '<i class="fa-brands fa-facebook-f"></i>',
@@ -58,6 +59,7 @@ export default {
                             color: 'background-color: #3f729b'
                         },
                     ],
+            //data for ul in .footer-top-center        
             contactsInfo: [
                 {
                     title: 'contact information',
@@ -73,6 +75,7 @@ export default {
                     ]
                 }
             ],
+            //data for ul in .footer-top-right
             departmentsInfo: [
                 {
                     title: 'medical departments',

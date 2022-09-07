@@ -5,6 +5,7 @@
             <SectionHeader :header="tourHeaderData"/>
             <span class="play-button mt-5" @click="showVideo"><i class="fa-solid fa-play"></i></span>
         </div>
+        <!-- video wrapper rendered on show == true and hidden on click on .video-wrapper -->
         <div class="video-wrapper" v-if="show == true" @click="closeVideo">
             <iframe width="960" height="540" src="https://www.youtube.com/embed/4LrQ8V6offk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -26,6 +27,7 @@ export default {
     data() {
         return {
             show: false,
+            //data for section header
             tourHeaderData: {
                 icon: 'icon-7.png',
                 title: 'tour our facilities',
@@ -34,6 +36,7 @@ export default {
         }
     },
     methods: {
+        //functions to show overlayed video
         showVideo() {
             this.show = true;
         },

@@ -19,6 +19,7 @@ export default {
     name: 'WelcomeSection',
     data() {
         return {
+            //data for #welcome cards v-for
             welcomeCards: [
             {
                 image: 'icon-1.png',

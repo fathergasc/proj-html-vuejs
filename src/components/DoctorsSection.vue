@@ -22,11 +22,13 @@ export default {
     },
     data() {
         return {
+            //data for section header
             doctorsHeaderData: {
                 icon: 'icon-5.png',
                 title: 'meet our doctors',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
             },
+            //data for doctors card v-for
             doctorsData: [
                 {
                     profilePic: 'doctor-1.jpg',

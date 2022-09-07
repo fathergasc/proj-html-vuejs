@@ -6,6 +6,7 @@
                 <input class="form_small" type="text" placeholder="Name*" required>
                 <input class="form_small" type="email" placeholder="Email*" required>
                 <input class="form_small" type="tel" placeholder="Phone Number*" required>
+                <!-- input type is text when not focused to allow the use of a placeholder and it's type date onfocus-->
                 <input class="form_small" type="text" onfocus="type='date'" onfocusout="type='text'" placeholder="Appointment Date" required>
                 <textarea class="form_big" name="text" cols="8" rows="6" placeholder="How can we help?*"></textarea>
                 <input type="submit" class="my_button btn_blue" value="make an appointment"/>
@@ -26,6 +27,7 @@ export default {
     data() {
         return {
             datePlaceholder: '&#128198; Appointment Date',
+            //data for section header
             appointmentHeaderData: {
             title: 'Make an Appointment',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
@@ -93,6 +95,7 @@ form {
     }
 }
 
+// changes input type date calendar icon from black to white, to make it more visible on the background image of #appointment
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
